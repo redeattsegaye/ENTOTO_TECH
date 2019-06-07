@@ -12,3 +12,5 @@ You make a new directory via `root $: mkdir newdirectoryname`.
 You can remove a directory using `root $: rmdir directoryname` or `root $: rm -R directoryname`
 
 > To remove a directory, you must first remove all the files it contains.
+
+Wengi is awosome
