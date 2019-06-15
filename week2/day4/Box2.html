@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+   display: flex;
+   flex-direction: row;
+   border:10px soloid rgb(167, 39, 39);
+   background-color: darkgrey;
+   width: 300px;
+   height: 300px;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;
+}
+
+.flex-item {
+    background-color: rgb(103, 37, 165);
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-width: 1px;
+    flex-direction: row-reverse;
+}
+.cflex-item {
+    background-color: rgb(160, 84, 101);
+    width: 205px;
+    height: 100px;
+    border-style: solid;
+    border-width: 1px;
+    flex-direction: row;
+    display: flex;
+    margin-top: 0px;
+}
+.dflex-item {
+    background-color: rgb(102, 14, 58);
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-width: 1px;
+    flex-direction: row;
+    display: flex;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item"> A</div>
+  <div class="flex-item"> B</div>
+  <abbr class="cflex-item">
+  <div class="cflex-item"> C</div> 
+  <div class="dflex-item"> E</div> 
+  </div>
+</div>
+
+
+</body>
+</html>

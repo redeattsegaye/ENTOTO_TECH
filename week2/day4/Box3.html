@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+   display: flex;
+   flex-direction: row;
+   border:10px soloid rgb(167, 39, 39);
+   background-color: darkgrey;
+   width: 300px;
+   height: 300px;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;
+}
+
+.flex-item {
+    background-color: rgb(103, 37, 165);
+    width: 204px;
+    height: 100px;
+    border-style: solid;
+    border-width: 1px;
+    flex-direction: row-reverse;
+    align-content: center;
+    text-align: center;
+}
+.bflex-item {
+    background-color: rgb(102, 14, 58);
+    width: 200px;
+    height: 150px;
+    border-style: solid;
+    border-width: 1px;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+}
+.cflex-item {
+    background-color: rgb(11, 86, 148);
+    width: 200px;
+    height: 150px;
+    border-style: solid;
+    border-width: 1px;
+    flex-direction: row;
+    display: flex;
+    margin-top: 0px;
+    text-align: center;
+}
+.dflex-item {
+    background-color: rgb(39, 136, 180);
+    width: 200px;
+    height: 150px;
+    border-style: solid;
+    border-width: 1px;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item"> A</div>
+
+  <div class="cflex-item">
+<div class="bflex-item"> B</div>
+  <div class="cflex-item"> C</div> 
+  <div class="dflex-item"> D</div> 
+ 
+  </div>
+</div>
+
+
+</body>
+</html>
