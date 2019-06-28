@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.4.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <style>
+        body{
+    background-color:plum;
+}
+            div.background {
+              background: url(Nature+Flowers+Macro-2880x1800.jpg) repeat;
+              border: 2px solid black;
+            }
+            
+            div.transbox {
+              margin: 50px;
+              background-color: #ffffff;
+              border: 1px solid black;
+              opacity: 0.6;
+              filter: alpha(opacity=80); 
+            }
+            
+            div.transbox p {
+              margin: 5%;
+              font-weight: bold;
+              color: #000000;
+            }
+            ul li :hover{
+    background-color:burlywood;
+}
+            </style>
+</head>
+
+<script >
+    $(document).ready(function(){
+       $.getJSON('W3D3.json', function(data){
+        $.each(data, function(i, W3D3){
+            $('ul#users').append('<li>'+W3D3.name+ '&nbsp is&nbsp a &nbsp '+ W3D3.speciase+ '</li>');
+        });
+    });
+    });
+    
+</script>
+<body>
+
+        <div class="background">
+          <div class="transbox">
+           
+             
+ <ul id ="users"></ul>
+          
+          </div>
+        </div>
+</body>
+</html>

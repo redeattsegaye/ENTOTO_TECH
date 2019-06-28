@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css</title>
+    <section>
+    <style>
+        div.background {
+    background: url(b3b2157c984e78c7f780b78211da5303.jpg) repeat;
+    border: 2px solid black;
+  }
+  div{
+         border-radius: 50px;
+         color: rgb(38, 216, 157);
+         background-color: azure;
+  }
+  div >p{
+      color:burlywood;
+
+  }
+  div:first-of-type{
+      background:rgb(206, 211, 195);
+
+  }
+  p~h3{
+      color: red;
+  }
+   div:last-child{
+      color: blueviolet;
+  }
+  div:nth-of-type(2){
+      background-color: navajowhite;
+
+  }
+  section:hover{
+      background-color:plum;
+  }
+  .child-a,
+  .child-b,
+  .child-c{
+      height: 50px;
+      width: 50px;
+  }
+    </style>
+</head>
+<h2>This is Advanced CSS </h2>
+<body>
+    <div class="#div">
+    <h1>Adjacent sibling</h1>
+    <ul>
+        <li> it used to separate two css selectors</li>
+        <li>it makes our code simple and clear</li>
+    </ul>
+    </div>
+<div class="#div">
+    <h1>Direct Descendent</h1>
+    <p>This is example of direct descendent</p>
+    <ul>
+        <li> it allow select our target element</li>
+        <li> it is also easy to manage our code</li> 
+    </ul>
+    
+</div>
+<div class="#div">
+        <h1>First of Type</h1>
+        
+        <ul>
+            <li> it used to select our first of type</li>
+            <li> it also makes our css more advanced</li> 
+        </ul>
+        
+    </div>
+    <div class="#div">
+            <h1>General Sibling</h1>
+            <div class="#div">
+                    
+                   <p> <h3>This is example of general sibling</h3></p>
+                    <ul>
+                        <li> it mainly used for select general things</li>
+                        <li> it is also easy to manage our code</li> 
+                    </ul>
+                    </div>
+                    <div class="#div">
+                            <h1>Stacking Selectors</h1>
+                            
+                            <ul>
+                                <li> it used to select our first of type</li>
+                                <li> it also makes our css more advanced</li> 
+                            </ul>
+                            
+                        </div>
+                </section>
+</body>
+</html>
+
+
