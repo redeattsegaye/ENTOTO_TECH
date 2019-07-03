@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sql note</title>
+    <style>
+        .ww{
+            background-color: bisque;
+            text-align: center;
+            color:blueviolet;
+            flex-wrap:wrap;
+
+
+        }
+        .f1{
+            background-color:black;
+            text-align: center;
+            color:blueviolet;
+            flex-wrap:wrap;
+        }
+    </style>
+</head>
+<h1 class="ww">This is list description sbout Sql commands</h1>
+<body>
+<h1>SQL select</h1>
+ 
+            <p>The most commonly used SQL command is SELECT statement. 
+                SQL SELECT statement is used to query or retrieve data from a table in the database.
+                 A query may retrieve information from specified columns or from all of the columns in the table. To create a simple SQL SELECT Statement, you must specify the column(s) name and the table name. 
+                The whole query is called SQL SELECT Statement.</p>
+
+                <img src="select1.png">
+  
+  <h1> SQL Alias</h1>
+   <p>  SQL Aliases are defined for columns and tables. Basically aliases is created to make the column selected more readable.
+    
+   
+    
+   
+
+
+    <img src="alias.png">
+    
+    In the above query, the column first_name is given a alias as 'name'. So when the result is displayed the column name appears as 'Name' instead of 'first_name'.</p>
+    <h1>SQL WHERE Clause</h1>
+    <p>The WHERE Clause is used when you want to retrieve specific information from a table excluding other irrelevant data. For example, when you want to see the information about students in class 10th only then you do need the information 
+        about the students in other class. Retrieving information 
+        about all the students would increase the processing time for the query.
+        
+        So SQL offers a feature called WHERE clause, which we can use to restrict the data that is retrieved. T
+        he condition you provide in the WHERE clause filters the rows retrieved from the table and gives you only those rows which you expected to see. WHERE clause can be used along with SELECT, DELETE, UPDATE statements.
+        
+        Syntax of SQL WHERE Clause
+        WHERE {column or expression} comparison-operator value
+        
+        Syntax for a WHERE clause with Select statement is:
+        
+        SELECT column_list FROM table-name 
+        WHERE condition;
+        
+        column or expression - Is the column of a table or a expression
+        comparison-operator - operators like .
+        value - Any user value or a column name for comparison.</p>
+        <h1>SQL Logical Operators</h1>
+        <p> There are three Logical Operators namely, AND, OR, and NOT. These operators compare two conditions at a time to determine whether a row can be selected for the output. When retrieving data using a SELECT statement, you can use logical operators in the WHERE clause, 
+            which allows you to combine more than one condition.</p>
+            <ul>
+                <li>OR	For the row to be selected at least one of the conditions must be true.</li>
+                <li>AND	For a row to be selected all the specified conditions must be true.</li>
+                <li>NOT	For a row to be selected the specified condition must be false.</li>
+
+            </ul>
+            <p>SQL LIKE Operator
+                The LIKE operator is used to list all rows in a table whose column values match a specified pattern. It is useful when you want to search rows to match a specific pattern, or when you do not know the entire value. For this purpose we use a wildcard character '%'.</p>
+                <ul>
+                    <li>LIKE<b>	column value is similar to specified character(s).</li>
+                    <li>IN	<b>column value is equal to any one of a specified set of values.</li>
+                    <li>BETWEEN...AND	column value is between two values, including the end values specified in the range.</li>
+                    <li>IS NULL	column value does not exist.</li>
+                </ul>
+                <p>SQL ORDER BY
+                    The ORDER BY clause is used in a SELECT statement to sort results either in ascending or descending order. Oracle sorts query results in ascending order by default.</p>
+                    <img src="orderdby.png">
+                    <p><h1>SQL GROUP BY Clause</h1>
+                        The SQL GROUP BY Clause is used along with the group functions to retrieve data grouped according to one or more columns.
+                        
+                        For Example: If you want to know the total amount of salary spent on each department, the query would be:
+                        <ul>
+                        <li>SELECT dept, SUM (salary) </li>
+                       <li> FROM employee </li>
+                        <li>GROUP BY dept;</li>
+                        </ul>
+                     </p>
+                     <p><h1>SQL INSERT Statement</h1>
+                        The INSERT Statement is used to add new rows of data to a table.
+                        
+                        We can insert data to a table in two ways,
+                        
+                        1) Inserting the data directly to a table.
+                        
+                        <ul>
+                            <li>Syntax for SQL INSERT is:</li>
+                        <li>INSERT INTO TABLE_NAME </li>
+                       <li> [ (col1, col2, col3,...colN)] </li>
+                        <li>VALUES (value1, value2, value3,...valueN); </ul>
+                        
+                        col1, col2,...colN -- the names of the columns in the table into which you want to insert data.
+                        While inserting a row, if you are adding value for all the columns of the table you need not specify the 
+                        column(s) name in the sql query. But you need to make sure the order of the values is in the same order as the columns in the table. 
+                        The sql insert query will be as follows</p>
+                        <h1>SQL Delete Statement</h1>
+                        <p>he sql delete command is optional and it identifies the rows in the column that gets deleted.
+                             If you do not include the WHERE clause all the rows in the table is deleted,
+                             so be careful while writing a DELETE query without WHERE clause.</p>
+
+
+                             <h1>SQL JOIN</h1>
+                            <p>A SQL JOIN combines records from two tables.
+                            A JOIN locates related column values in the two tables.
+A query can contain zero, one, or multiple JOIN operations.
+INNER JOIN is the same as JOIN; the keyword INNER is optional.</p> 
+<h1>SQL UNION </h1>
+<p>UNION combines the result sets of two queries.
+        Column data types in the two queries must match.
+        UNION combines by column position rather than column name.</p>
+        <h1>SQL Subqueries</h1>
+        <p>A subquery is a SQL query within a query.
+                Subqueries are nested queries that provide data to the enclosing query.
+                Subqueries can return individual values or a list of records
+                Subqueries must be enclosed with parenthesis
+            </p>
+            <fotter class="f1">2019 g.c</fotter>
+                        </body>
+                        </html>
+

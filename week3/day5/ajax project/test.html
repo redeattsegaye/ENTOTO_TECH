@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.4.1.js"></script>
+</head>
+<script>
+ $(document).ready(function(){ 
+//  $('#result').get('testmydoc.html', function(responseTxt, statusTxt,xhr){
+//     if(statusTxt == success){
+//        alert('It went well')
+
+//     } else if(statusTxt==Error){
+//         alert("Error:"+xhr.statusTxt);
+//     }
+
+//  })
+ $.get('testmydoc.txt', function(data){
+    $('#result').html(data);
+    
+ });
+
+})
+</script> 
+<body>
+<div id = "result">
+</div>
+</body>
+</html>

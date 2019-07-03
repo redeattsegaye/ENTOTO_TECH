@@ -1,0 +1,5 @@
+The ORDER  by
+- keyword is used to sort the result-set by one or more columns.
+The ORDER BY keyword sorts the records in ascending order by default. 
+To sort the records in a descending order, you can use the DESC keyword. true.
+

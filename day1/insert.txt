@@ -1,0 +1,3 @@
+insert
+- a new row, but only insert data in the "CustomerName", "City", and "Country" columns 
+(and the CustomerID field will of course also be updated automatically):
