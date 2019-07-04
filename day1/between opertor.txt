@@ -1,3 +1,0 @@
-
-The SQL BETWEEN Operator
-   -The BETWEEN operator is used to select values within a range.
