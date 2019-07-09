@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>login</title>
-    <link rel="stylesheet" type="text/css" href="./css/nature.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>my-nature</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/nature.css">
     <script src="./login.js"></script>
-</head>
-<main>
-<body>
-    <div class="container">
-        <img src="./images/images.jpg" class="img">
-        <h1>Login </h1>   
-        
+  </head>
+    
+    <marquee>
+      This is our login page
+     </marquee>
+    <main>
+      <head>
+              <link rel="stylesheet" href="./nature.css">
+      </head>
+    <form action="/action_home.html">
+      <div class="imgcontainer">
+        <img src="./images/images.jpg" alt="login" class="login">
+      </div>
+    
+      <div class="container">
         <label for="username"><b>Username</b><br> </label>
-        <input id="username" type="text" name="" placeholder="Enter your Username" required>
+        <input type="text" placeholder="Enter Username" name="uname" required/>
+    
+        <label id="password"><b>password</b><br></label>
+        <input type="text" placeholder="ff545" name="password" required/>
 
-        <label for="password"><b>password</b><br> </label>
-        <input id="password" type="text" name="" placeholder="Enter your password" required>
         
-        
-    </label>
+     
         <input type ="button" value="Click Here"onclick="getInfo()"/>
         
-        <a href="#">Forget Password?</a><br >
-        <a href="#">Don't have an account?</a><br >
         
+      
         <label>
-            <input type="checkbox" checked="checked" name="remember" required/> Remember me
-          </label>
+          <input type="checkbox" checked="checked" name="remember" required/> Remember me
+        </label>
+       
+      </div>
 
-        </div>
-    </main>
+<body>
+</main>
 </body>
 </html>
